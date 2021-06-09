@@ -1,0 +1,14 @@
+.Card {
+  text-align: center;
+  max-height: 400px;
+  max-width: 275px;
+  height: 100%;
+  width: 100%;
+  border: solid 2px fuchsia;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  img {
+    height: 200px;
+    width: 50px;
+  }
+}
