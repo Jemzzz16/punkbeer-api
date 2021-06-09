@@ -1,7 +1,17 @@
 .searchbar {
+  margin: 0;
+  padding: 0;
   input {
+    position: absolute;
     height: 50px;
     width: 200px;
     border: solid 2px pink;
+    margin: 20px;
+  }
+  .bar {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: baseline;
+    position: absolute;
   }
 }
