@@ -7,7 +7,7 @@ const Card = (props) => {
     tagline,
     description,
     image_url,
-  } = props.beer;
+  } = props.beers;
   return (
     <div className={styles.Card}>
       <section>

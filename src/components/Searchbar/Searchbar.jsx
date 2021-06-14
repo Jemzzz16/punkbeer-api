@@ -2,13 +2,12 @@ import React from "react";
 import styles from "./Searchbar.module.scss";
 
 const Searchbar = (props) => {
-  const { placeholder } = props;
-
- const input = <input type='text' placeholder={placeholder} onBlur={(e) => props.handleUpdate(e.target.value)} />
+  const { handleSearch } = props;
 
   return (
-    <div className={styles.searchbar}>
-     <section className={styles.bar}>{input}</section>
+    <div className={styles.inputbox}>
+       <input placeholder='Search beer here...' 
+       onBlur={(e) => handleSearch(e.target.value)}></input>
     </div>
   );
 };
