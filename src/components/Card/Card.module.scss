@@ -1,24 +1,32 @@
 .Card {
   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   text-align: center;
+  align-items: center;
   height: 400px;
   width: 275px;
   margin: 10px;
-  border: solid 5px fuchsia;
+  border: solid 2px wheat;
+  border-radius: 20px;
   text-overflow: ellipsis;
   overflow: hidden;
+  background-color: #ec7357;
   img {
     height: 200px;
     width: 50px;
     padding: 10px;
   }
   h2 {
-    color: grey;
+    color: white;
     margin: 0;
     padding: 0;
   }
   h6 {
-    color: grey;
+    color: lightblue;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    color: white;
     margin: 0;
     padding: 0;
   }

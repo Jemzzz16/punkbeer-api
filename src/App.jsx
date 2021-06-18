@@ -1,8 +1,8 @@
-import styles from "./App.module.scss";
 import Searchbar from "./components/Searchbar";
 import Card from "./components/Card";
 import React, { useState, useEffect } from "react";
 
+import styles from "./App.module.scss";
 
 function App() {
   const [beer, setBeer] = useState([]);
@@ -25,7 +25,6 @@ function App() {
   };
   useEffect(() => {
     getPunkAPI("");
-    console.log(beer);
   }, []);
 
   const getBeer = (beer) => {
@@ -36,9 +35,9 @@ function App() {
     <>
       <div className={styles.content}>
         <Searchbar handleSearch={getPunkAPI} />
-      <section>
-        {beer.map(getBeer)}
-      </section>
+        <section className={styles.section}>
+         {beer.map(getBeer)}
+       </section>
       </div>
     </>
   );

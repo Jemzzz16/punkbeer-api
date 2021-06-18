@@ -1,6 +1,17 @@
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100vw;
-  height: 100vh;
-  padding: 10px;
+  height: max-content;
+  flex-wrap: wrap;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #754f44;
 }
